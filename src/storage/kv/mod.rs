@@ -1,3 +1,4 @@
+mod bepsilon_memory;
 pub mod encoding;
 mod memory;
 pub mod mvcc;
@@ -8,6 +9,7 @@ mod test;
 pub use memory::Memory;
 pub use mvcc::MVCC;
 pub use std_memory::StdMemory;
+pub use bepsilon_memory::BEpsilonTreeInMemory;
 #[cfg(test)]
 pub use test::Test;
 
